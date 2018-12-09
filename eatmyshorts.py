@@ -99,7 +99,7 @@ print (data1.shape)
 print (labels.shape)
 
 model.fit(data1,labels,validation_split=0.1,epochs=20,batch_size=10)
-model.save_weights("model.h5")
+model.save("model.h5")
 
 # Read in and label test data
 test_data=[]
